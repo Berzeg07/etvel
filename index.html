@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Главная</title>
 	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,266 +15,78 @@
 
 <body>
 
-	<div class="container">
-		<div class="brends block-style">
-			<div class="brends-title">
-				<p>Выполняем <a href="#">ремонт любой сложности.</a><br>
-					Работаем с оборудованием отечественных, а также зарубежных производителей всех марок.</p>
-			</div>
-			<div class="brends-block">
-				<div class="brends-block_item"><img src="img/wilson.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/yanmar.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/ewropower.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/aksa.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/jcb.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/motor.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/sdmo.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/tcc.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/mitsubishi.png" alt=""></div>
-				<div class="brends-block_item"><img src="img/istok.png" alt=""></div>
-			</div>
-		</div>
 
-		<div class="service__items">
-
-			<div class="service__item">
-				<div class="service__item-title">Ремонт</div>
-				<div class="service__item-text">
-					<p>Наши специалисты имеют богатый опыт
-						выполнения таких работ и знания, необходимые
-						для эффективного ремонта установок разных
-						марок дизельных генераторов.
-					</p>
-					<span>В их распоряжении:</span>
-					<ul class="service__item-list">
-						<li><a href="#">современный инструмент</a></li>
-						<li><a href="#">новейшее программное</a></li>
-					</ul>
-				</div>
-				<div class="service__item-order">
-					<a href="#" data-toggle="modal" data-id="3" data-target="#serviceModal" role="button" class="btn btn-primary btn-block btn-service" data-name="Ремонт">
-						<span class="btn__content"><span>Заказать услугу</span></span>
+	<header class="header">
+		<div class="header__main-wrap">
+			<div class="header__main">
+				<div class="header__logo">
+					<a href="#">
+						<img src="images/logo.png" alt="">
 					</a>
 				</div>
-			</div>
-
-
-			<div class="service__item">
-				<div class="service__item-title">ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ДИЗЕЛЬ-ГЕНЕРАТОРОВ (ТО)</div>
-				<div class="service__item-text">
-					<p><a href="#">Все работы</a> по обслуживанию дизельных, бензиновых&nbsp;генераторов <a href="#">выполняются с использованием оригинальных запчастей и комплектующих,</a> по желанию Заказчика возможно использование качественных аналогов.</p>
-					<p>
-						Производится замена расходных
-						материалов согласно рекомендациям производителя.</p>
-				</div>
-				<div class="service__item-order">
-					<a href="#" data-toggle="modal" data-id="5" data-target="#serviceModal" role="button" class="btn btn-primary btn-block btn-service" data-name="Техническое обслуживание">
-						<span class="btn__content"><span>Заказать услугу</span></span>
-					</a>
-				</div>
-			</div>
-
-			<div class="service__item">
-				<div class="service__item-title">РЕМОНТ И ОБСЛУЖИВАНИЕ СТРОИТЕЛЬНОГО ОБОРУДОВАНИЯ</div>
-				<div class="service__item-text">
-					<p>Во время обслуживания ДГУ подается нагрузка,
-						достаточная для удаления конденсата и нагара
-						из выхлопной системы, прочистки двигателя.</p>
-				</div>
-				<div class="service__item-order">
-					<a href="#" data-toggle="modal" data-id="6" data-target="#serviceModal" role="button" class="btn btn-primary btn-block btn-service" data-name="Испытание оборудования">
-						<span class="btn__content"><span>Заказать услугу</span></span>
-					</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="special-service block-style">
-			<div class="special-service_title">Стационарный и выездной ремонт бензиновых и дизельных электростанций</div>
-			<div class="service__item-text">
-				<p>А также строительного оборудования <a href="#">(выезд в пределах края).</a></p>
-			</div>
-			<div class="service__item-order">
-				<a href="#" data-toggle="modal" data-id="6" data-target="#serviceModal" role="button" class="btn btn-primary btn-block btn-service" data-name="Испытание оборудования">
-					<span class="btn__content"><span>Заказать услугу</span></span>
-				</a>
-			</div>
-		</div>
-
-		<div class="table-title">
-			<h2>Таблица стоимости ТО</h2>
-		</div>
-		<div class="service__table table_adaptive table-main">
-			<table>
-				<thead>
-					<tr>
-						<th>Мощность, кВА</th>
-						<th>ТО-1, руб.</th>
-						<th>ТО-2, руб.</th>
-						<th>ТО-3, руб.</th>
-						<th>Испытание под нагрузкой, руб.</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td data-label="Мощность, кВА">до 20</td>
-						<td data-label="ТО-1, руб.">10.500</td>
-						<td data-label="ТО-2, руб.">16.000</td>
-						<td data-label="ТО-3, руб.">18.500</td>
-						<td data-label="Испытание под нагрузкой, руб.">10.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">20-50</td>
-						<td data-label="ТО-1, руб.">13.500</td>
-						<td data-label="ТО-2, руб.">18.000</td>
-						<td data-label="ТО-3, руб.">20.500</td>
-						<td data-label="Испытание под нагрузкой, руб.">15.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">50-100</td>
-						<td data-label="ТО-1, руб.">17.800</td>
-						<td data-label="ТО-2, руб.">22.000</td>
-						<td data-label="ТО-3, руб.">25.800</td>
-						<td data-label="Испытание под нагрузкой, руб.">20.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">100-150</td>
-						<td data-label="ТО-1, руб.">20.000</td>
-						<td data-label="ТО-2, руб.">24.000</td>
-						<td data-label="ТО-3, руб.">29.700</td>
-						<td data-label="Испытание под нагрузкой, руб.">20.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">150-250</td>
-						<td data-label="ТО-1, руб.">21.500</td>
-						<td data-label="ТО-2, руб.">28.300</td>
-						<td data-label="ТО-3, руб.">3.600</td>
-						<td data-label="Испытание под нагрузкой, руб.">25.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">250-400</td>
-						<td data-label="ТО-1, руб.">24.700</td>
-						<td data-label="ТО-2, руб.">38.600</td>
-						<td data-label="ТО-3, руб.">58.700</td>
-						<td data-label="Испытание под нагрузкой, руб.">33.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">400-750</td>
-						<td data-label="ТО-1, руб.">41.800</td>
-						<td data-label="ТО-2, руб.">57.400</td>
-						<td data-label="ТО-3, руб.">68.100</td>
-						<td data-label="Испытание под нагрузкой, руб.">38.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">750-1000</td>
-						<td data-label="ТО-1, руб.">47.900</td>
-						<td data-label="ТО-2, руб.">63.500</td>
-						<td data-label="ТО-3, руб.">105.900</td>
-						<td data-label="Испытание под нагрузкой, руб.">45.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">1000-1500</td>
-						<td data-label="ТО-1, руб.">65.700</td>
-						<td data-label="ТО-2, руб.">87.600</td>
-						<td data-label="ТО-3, руб.">14.400</td>
-						<td data-label="Испытание под нагрузкой, руб.">55.000</td>
-					</tr>
-					<tr>
-						<td data-label="Мощность, кВА">1500-2000</td>
-						<td data-label="ТО-1, руб.">79.000</td>
-						<td data-label="ТО-2, руб.">112.000</td>
-						<td data-label="ТО-3, руб.">200.100</td>
-						<td data-label="Испытание под нагрузкой, руб.">65.000</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="service-about">
-			<div class="service-about_item">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nasc
-					ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-					justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-					tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-				</p>
-			</div>
-			<div class="service-about_item">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nasc
-					ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-					justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-					tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-				</p>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nasc
-					ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-					justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-					tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-				</p>
-			</div>
-			<div class="service-about_item">
-				<div class="service-about_title">
-					<h2>Что входит в техническое обслуживание дизель-генераторов</h2>
-				</div>
-				<div class="service-about_list">
-					<ul>
-						<li>Замена фильтров.</li>
-						<li>Замена моторного масла в системе смазки двигателя.</li>
-						<li>Замена антифриза в системе охлаждения двигателя.</li>
-						<li>Проверка демпфера крутильных колебаний.</li>
-						<li>Контроль состояния приводных ремней.</li>
-						<li>Очистка клапана сапуна.</li>
-						<li>Контроль плотности антифриза в системе охлаждения двигателя.</li>
-						<li>Проверка электрического сопротивления и очистка обмоток дизельного генератора от пыли.</li>
-						<li>Контроль состояния шлангов и хомутов системы охлаждения.</li>
-						<li>Очистка радиатора от пыли и загрязнений.</li>
-						<li>Контроль качества заземления оборудования.</li>
-						<li>Проверка качества функционирования AVR генератора.</li>
-					</ul>
-					<ul>
-						<li>Контроль защитных систем двигателя.</li>
-						<li>Контроль и очистка датчиков оборотов вала.</li>
-						<li>Контроль затяжки и надежности всех электрических соединений.</li>
-						<li>Контроль затяжки всех крепежных гаек, болтов и соединений двигателя и генератора.</li>
-						<li>Проверка электрического сопротивления и очистка обмоток генератора от пыли.</li>
-						<li>Проверка крепежа генератора, панели управления, навесного оборудования, работающих в условиях вибрации.</li>
-						<li>Проверка качества контакта на клеммах аккумуляторной батареи и зачистка их при необходимости.</li>
-						<li>Контроль состояния и очистка генератора 24В.</li>
-						<li>Осмотр и очистка от пыли электростартера.</li>
-						<li>Осмотр и очистка силового генератора.</li>
-						<li>Запуск оборудования на холостом ходу и снятии выходных параметров</li>
-						<li>Проверка работы ДГУ под нагрузкой Заказчика или под эквивалентом нагрузки Исполнителя.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="form-wrap">
-		<div class="form-block">
-			<form action="#">
-				<h2>остались вопросы?</h2>
-				<p>Оставьте свои контактные данные и мы бесплатно<br>
-					проконсультируем Вас в ближайшее время</p>
-				<div class="form-block_inp">
-					<input type="text" placeholder="Имя">
-					<input type="text" placeholder="Контактный номер">
-				</div>
-				<div class="form-btn">
-					<a href="#" data-toggle="modal" data-id="6" data-target="#serviceModal" role="button" class="btn btn-primary btn-block btn-service">
-						<span class="btn__content"><span>Отправить</span></span>
-					</a>
-				</div>
-				<div class="form-block_captcha">
-					<img src="img/captcha.png" alt="">
-					<span>
-						Нажав на кнопку “зарегистрироваться” Вы соглашаетесь
-						с условиями <a href="#">публичной оферты</a> и с условиями <a href="#">Политики
-							обработки персональных данных</a>
+				<div class="header__burger">
+					<span class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</span>
 				</div>
-			</form>
+				<div class="header__menu">
+					<ul>
+						<li><a href="#" class="">О компании</a></li>
+						<li><a href="#" class="">Отзывы</a></li>
+						<li><a href="#" class="">Доставка</a></li>
+						<li><a href="#" class="">Гарантия</a></li>
+						<li><a href="#" class="">Контакты</a></li>
+						<li><a href="#" class="">Автосервис</a></li>
+						<li><a href="#" class="">Вакансии</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
+	</header>
+	<main class="page__main">
+		<section class="teasers">
+			<div class="teaser teaser_01">
+				<div class="teaser__title">
+					<h1><a href="/autoservice" style="text-decoration: none;color:#000">Автосервис <br>MAZDA</a></h1>
+				</div>
+				<div class="teaser__content">
+					<div class="teaser__select-wrap">
+						<div class="form-group">
+							<select name="" id="serviceSelect" data-placeholder="Выбрать услугу">
+								<option></option>
+								<option value="3">Сход развал</option>
+								<option value="4">Ремонт выхлопной системы</option>
+								<option value="9">Ремонт коробки передач и сцепления</option>
+								<option value="10">Ремонт топливной системы</option>
+								<option value="12">Заправка и ремонт кондиционера</option>
+								<option value="75">Ремонт тормозной системы</option>
+								<option value="86">Ремонт рулевого управления</option>
+								<option value="104">Ремонт электрооборудования</option>
+								<option value="113">Ремонт системы охлаждения</option>
+								<option value="148">Ремонт отопителя автомобиля</option>
+								<option value="150">Замена опоры двигателя и опоры передач</option>
+								<option value="5">Техническое обслуживание</option>
+								<option value="6">Диагностика</option>
+								<option value="7">Ремонт ходовой части</option>
+								<option value="1">Ремонт двигателя</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="teaser__button">
+					<a href="#" class="service_btn btn btn-info btn-block btn_with-icon" data-toggle="modal" data-target="#repairModal" role="button">
+						<span class="btn__content">
+							<span>Записаться на ремонт машины</span>
+							<img src="images/icon-arrow-right-dark.png" alt="">
+						</span>
+						<span class="btn__hover-effect"></span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
 
 
 
@@ -281,6 +95,8 @@
 
 	<!-- JS_BLOCK -->
 	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script src="libs/formstyler/formstyler.js"></script>
+
 	<script src="libs/owl.carousel/owl.carousel.js"></script>
 	<script src="js/common.js"></script>
 </body>

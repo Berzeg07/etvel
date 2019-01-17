@@ -100,8 +100,10 @@
 			</div>
 		</div>
 
-
-		<div class="service__table table_adaptive">
+		<div class="table-title">
+			<h2>Таблица стоимости ТО</h2>
+		</div>
+		<div class="service__table table_adaptive table-main">
 			<table>
 				<thead>
 					<tr>
@@ -255,7 +257,11 @@
 					<input type="text" placeholder="Имя">
 					<input type="text" placeholder="Контактный номер">
 				</div>
-				<a href="#" class="btn__content">Отправить</a>
+				<div class="form-btn">
+					<a href="#" data-toggle="modal" data-id="6" data-target="#serviceModal" role="button" class="btn btn-primary btn-block btn-service">
+						<span class="btn__content"><span>Отправить</span></span>
+					</a>
+				</div>
 				<div class="form-block_captcha">
 					<img src="img/captcha.png" alt="">
 					<span>

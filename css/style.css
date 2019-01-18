@@ -2262,3 +2262,52 @@ bottom: 20px;
 		padding-bottom: 56.25%;
 	}
 }
+.phone-header{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.phone-header:hover{
+    color:white;
+}
+.header__logo{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 480px) {
+    .phone-header{
+        padding-left: 20px;
+    }
+    .header__logo{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.stickytop{
+    position: fixed;
+    width: 100%;
+    background:rgba(#fff,0.9);
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.toTop{
+    position:fixed;
+    display: none;
+    right: 20px;
+    bottom:20px;
+    width: 79px;
+    height: 56px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1) url(../images/to-top.png) no-repeat center;
+    cursor:pointer;
+}
+.toTop-show{
+    display: block;
+}
+.teaser_01 .teaser__title{
+    margin-bottom: 50px;
+}

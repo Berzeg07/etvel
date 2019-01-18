@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('.header').toggleClass('menu-open');
         return false;
     });
+    // $("[data-fancybox]").fancybox();
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > 60) {
@@ -108,6 +109,45 @@ $(document).ready(function() {
     });
     $('#repairModal').on('hide.bs.modal', function() {
         $('#service_id').val('0');
+    })
+
+    var isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod/i) != null ||
+        screen.width <= 480;
+
+    $('.form').on('submit', function() {
+        $.ajax({
+            url: "/mains/submit",
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function(result) {
+                $(".modal").modal('hide');
+                $("#thankstModal").modal('show');
+                $('form input[type="text"]').val('');
+                $('form textarea').val('');
+                setTimeout(function() {
+                    $('#thankstModal').modal('hide')
+                }, 3000);
+            }
+        });
+        return false;
+    });
+    $('.respond').on('click', function() {
+        $('input[name=vacancy]').val($(this).attr('data-r'));
     });
 
-}); //END READY
+    $('.page_mainpage #video-bg').height($('.header').outerHeight() + $('.teasers').outerHeight());
+
+    $(function(){
+        $(window).scroll(function() {
+            if($(this).scrollTop()) {
+                $('.header').addClass('stickytop');
+                $('.toTop').addClass('toTop-show');
+            }
+            else{
+                $('.header').removeClass('stickytop');
+                $('.toTop').removeClass('toTop-show');
+            }
+        });
+    });
+
+});

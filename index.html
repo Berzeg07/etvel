@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Главная</title>
-	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -23,6 +22,7 @@
 					<a href="#">
 						<img src="images/logo.png" alt="">
 					</a>
+					<a class="phone-header" href="tel:+73432478262"> +7 (343) <b>247-82-62</b></a>
 				</div>
 				<div class="header__burger">
 					<span class="navbar-toggle">
@@ -90,14 +90,58 @@
 
 
 
+	<div class="modal modal_small fade dialog" id="repairModal" tabindex="-1" role="dialog" aria-labelledby="repairModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-body">
+					<h3 class="modal__title">Он-лайн запись на ремонт</h3>
+					<p>Оставьте свои контактные данные и мы с вами свяжемся в ближайшее время</p>
+					<form action="" class="form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="name" required placeholder="Имя">
+						</div>
+						<div class="form-group form-group_phone">
+							<span class="phone-code">+7 </span><input type="text" class="form-control phone" name="phone" required placeholder="(___) ___-__-__">
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Текст сообщения" class="form-control" name="text" required></textarea>
 
+							<input id="service_id" type="hidden" name="service" value="0">
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<button onclick="yaCounter48995900.reachGoal('otpravit-formu-zapis-na-remont'); return true;" class="btn btn-primary btn-block btn_with-icon">
+									<span class="btn__content">
+										<span>Отправить</span>
+										<img src="/images/icon-arrow-right.png" alt="">
+									</span>
+									<span class="btn__hover-effect"></span>
+								</button>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<p class="form__agreement">
+									<p class="form__agreement">Нажав на кнопку "Отправить", Вы даете <a href="/agreement" target="_blank">согласие</a> на обработку персональных данных.</p>
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="toTop"></div>
+
+	<!-- тестовый блок для наличия прокрутки -->
+	<div class="test-block" style="height:600px;"></div>
 
 	<!-- JS_BLOCK -->
 	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
 	<script src="libs/formstyler/formstyler.js"></script>
-
-	<script src="libs/owl.carousel/owl.carousel.js"></script>
+	<script src="libs/bootstrap/bootstrap.js"></script>
 	<script src="js/common.js"></script>
 </body>
 
